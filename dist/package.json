@@ -1,6 +1,6 @@
 {
 	"name": "@discordjs/uws",
-	"version": "0.1.0",
+	"version": "10.14.0",
 	"description": "Tiny WebSockets",
 	"main": "uws.js",
 	"author": "Alex Hultman <alexhultman@gmail.com> (https://github.com/alexhultman)",
@@ -15,10 +15,10 @@
 		"tiny",
 		"websockets"
 	],
-	"homepage": "https://github.com/discordjs/uws",
+	"homepage": "https://github.com/discordjs/uws#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/discordjs/uws.git"
+		"url": "git+https://github.com/discordjs/uws.git"
 	},
 	"engines": {
 		"node": ">=6.0.0"
