@@ -1,0 +1,22 @@
+# Packages
+node_modules/
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dist
+dist/*.node
+dist/*.md
+dist/LICENSE
+dist/*.js
+
+# Miscellaneous
+.tmp/
+.github/
