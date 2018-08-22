@@ -1,5 +1,8 @@
 # Fork of uws bindings for discord.js
 
+### This fork is for internal usage in the discord.js library only.  
+### We will provide no support to anyone relying or using it outside of our main project.
+
 ---
 ---
 ---
