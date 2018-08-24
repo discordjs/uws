@@ -1,6 +1,6 @@
 {
 	"name": "@discordjs/uws",
-	"version": "10.14.0",
+	"version": "10.149.0",
 	"description": "Tiny WebSockets",
 	"main": "uws.js",
 	"author": "Alex Hultman <alexhultman@gmail.com> (https://github.com/alexhultman)",
