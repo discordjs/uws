@@ -20,7 +20,7 @@ struct HttpServer {
 			args.GetReturnValue().Set(args.Holder());
 		}
 
-		static void headers(Local<String> property, const PropertyCallbackInfo<Value> &args) {
+		static void headers(Local<Name> property, const PropertyCallbackInfo<Value> &args) {
 			uWS::HttpRequest *req = currentReq;
 			if (!req) {
 				std::cerr << "Warning: req.headers usage past request handler is not supported!" << std::endl;
@@ -99,7 +99,9 @@ struct HttpServer {
 			Local<Object> reqObjectLocal = reqTemplateLocal->GetFunction()->NewInstance(isolate->GetCurrentContext()).ToLocalChecked();
 
 			Local<ObjectTemplate> headersTemplate = ObjectTemplate::New(isolate);
-			headersTemplate->SetNamedPropertyHandler(Request::headers);
+			GenericNamedPropertyGetterCallback Getter = Request::headers;
+			NamedPropertyHandlerConfiguration Configuration(Getter);
+			headersTemplate->SetHandler(Configuration);
 
 			reqObjectLocal->Set(String::NewFromUtf8(isolate, "headers"), headersTemplate->NewInstance());
 			return reqObjectLocal;
