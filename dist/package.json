@@ -1,6 +1,6 @@
 {
 	"name": "@discordjs/uws",
-	"version": "10.149.0",
+	"version": "11.149.0",
 	"description": "Tiny WebSockets",
 	"main": "uws.js",
 	"author": "Alex Hultman <alexhultman@gmail.com> (https://github.com/alexhultman)",
@@ -9,7 +9,7 @@
 	],
 	"license": "Zlib",
 	"scripts": {
-		"install": "node-gyp rebuild > build_log.txt 2>&1 || exit 0"
+		"install": "node-gyp rebuild"
 	},
 	"keywords": [
 		"tiny",
