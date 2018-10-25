@@ -12,6 +12,7 @@ pids
 *.seed
 
 # Dist
+dist/src
 dist/*.node
 dist/*.md
 dist/LICENSE

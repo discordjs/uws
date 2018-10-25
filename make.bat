@@ -34,5 +34,4 @@ cl /I targets/node-v11.0.0/include/node /EHsc /Ox /LD /Fedist/uws_win32_67.node 
 rm *.obj
 rm dist/*.exp
 rm dist/*.lib
-rm -rf dist/src
 rm -rf targets
